@@ -23,4 +23,6 @@ questionRouter.post('/:id/:targetUserId',questionControler.followUser);
 
 questionRouter.post('/',questionControler.createTopic);
 
-questionRouter.get('')
+questionRouter.get('/',questionControler.getTopics);
+
+
