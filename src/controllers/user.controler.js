@@ -1,11 +1,11 @@
-function newUser(req,res){
+// src/controllers/userController.js
 
+export function pingCheck(req, res) {
+    return res.json({ message: 'Ping is alive' });
 }
 
-function getUser(req,res){
+export function newUser(req, res) {}
 
-}
+export function getUser(req, res) {}
 
-function updateUser(req,res){
-    
-}
+export function updateUser(req, res) {}
