@@ -1,6 +1,6 @@
 import express from "express"
 
-import { questionControler } from "../../controllers"
+import { questionControler } from "../../controllers/index.js"
 
 const questionRouter=express.Router();
 
@@ -25,4 +25,4 @@ questionRouter.post('/',questionControler.createTopic);
 
 questionRouter.get('/',questionControler.getTopics);
 
-
+export default questionRouter;

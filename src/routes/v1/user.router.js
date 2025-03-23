@@ -6,11 +6,11 @@ const userRouter = express.Router();
 // Route for pingCheck
 userRouter.get('/ping',userControler.pingCheck);
 
-userRouter.get('/id',userControler.getUser);
+userRouter.get('/:id',userControler.getUser);
 
-userRouter.post('/',userControler.newUser);
+userRouter.post('/',userControler.createUser);
 
-userRouter.put('/id',userControler.updateUser);
+userRouter.put('/:id',userControler.updateUser);
 
 
 
