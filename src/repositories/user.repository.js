@@ -37,5 +37,5 @@ class userRepository{
         }
     }
 }
-
+   
 export default userRepository
